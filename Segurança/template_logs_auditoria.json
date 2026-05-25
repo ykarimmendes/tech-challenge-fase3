@@ -1,0 +1,25 @@
+{
+  "objetivo": "Permitir rastreabilidade, auditoria, explainability e avaliação posterior.",
+  "campos_obrigatorios": [
+    "timestamp",
+    "id_interacao",
+    "id_usuario_ou_perfil",
+    "id_paciente_sintetico",
+    "pergunta_original",
+    "dados_contexto_utilizados",
+    "protocolo_recuperado",
+    "fonte_simulada",
+    "nivel_risco",
+    "resposta_gerada",
+    "regras_aplicadas",
+    "status_validacao_humana",
+    "validador_responsavel",
+    "observacoes_de_auditoria"
+  ],
+  "status_validacao_humana": [
+    "pendente",
+    "aprovado",
+    "aprovado_com_ajustes",
+    "reprovado"
+  ]
+}
