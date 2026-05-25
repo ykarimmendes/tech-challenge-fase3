@@ -1,0 +1,25 @@
+{
+  "objetivo": "Garantir respostas rastreáveis, justificadas e associadas às fontes simuladas recuperadas.",
+  "campos_obrigatorios_na_resposta": [
+    "resumo do caso",
+    "protocolo/fonte consultada",
+    "nível de risco estimado",
+    "dados que precisam ser confirmados",
+    "limitação do assistente",
+    "necessidade de validação humana"
+  ],
+  "formato_resposta_sugerido": {
+    "1_resumo": "Resumo breve do caso informado.",
+    "2_fonte": "Resposta baseada no protocolo PROT-XXX — título do protocolo.",
+    "3_orientacao": "Orientação segura, sem prescrição ou diagnóstico definitivo.",
+    "4_dados_faltantes": "Informações adicionais necessárias.",
+    "5_seguranca": "Mensagem de validação humana obrigatória."
+  },
+  "regras": [
+    "Não citar protocolo inexistente.",
+    "Não usar fonte externa sem recuperação.",
+    "Declarar limitação quando a recuperação for incerta.",
+    "Priorizar regra de segurança em caso de conflito.",
+    "Registrar fonte no log."
+  ]
+}
