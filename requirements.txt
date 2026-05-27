@@ -3,3 +3,5 @@ langchain-community
 langchain-ollama
 ollama
 pandas
+langgraph
+typing-extensions

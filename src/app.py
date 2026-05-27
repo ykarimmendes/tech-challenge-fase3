@@ -1,12 +1,13 @@
-from assistant import gerar_resposta
+from langgraph_flow import executar_fluxo
 
 
 if __name__ == "__main__":
+    print("=== Assistente Médico Acadêmico com LangGraph ===")
+    print("Digite uma pergunta clínica ou relato do paciente.")
+    print("Exemplo: Paciente relata dor torácica e sudorese.\n")
 
-    pergunta = input(
-        "Digite a pergunta clínica: "
-    )
+    entrada = input("Entrada do paciente/profissional: ")
 
-    resposta = gerar_resposta(pergunta)
+    resultado = executar_fluxo(entrada)
 
-    print(resposta)
+    print(resultado["resposta_final"])
